@@ -8,6 +8,7 @@
 
 # process user inputs
 print("Rock, Paper, Scissors, Shoot!")
+print("Welcome 'Player One' to my Rock-Paper-Scissors game.")
 
 u = input("Please choose one of: 'rock', 'paper', 'scissors': ")
 print("User chose:", u)
@@ -16,8 +17,12 @@ print("User chose:", u)
 
 # validate user inputs
 
-
-
+v=input().lower()
+if v in ['rock','paper','scissors']:
+    print("Good choice!")
+else:
+    print("You entered an invalid option. The game stopped.")
+    quit()
 
 
 
@@ -36,20 +41,20 @@ print("Computer chose:", computer_choice)
 if u == computer_choice:
     print("It's a tie!")
 elif u == "rock" and computer_choice == "paper":
-    print("Computer wins!")
+    print("Oh, the computer won. It's ok.")
 elif u == "rock" and computer_choice == "scissors":
-    print("You win!")
+    print("Congratulations! You won!")
 elif u == "scissors" and computer_choice == "rock":
-    print("Computer wins!")
+    print("Oh, the computer won. It's ok.")
 elif u == "scissors" and computer_choice == "paper":
-    print("You win!")
+    print("Congratulations! You won!")
 elif u == "paper" and computer_choice == "scissors":
-    print("Computer wins!")
+    print("Oh, the computer won. It's ok.")
 else:    
-    print("Computer wins!")
+    print("Oh, the computer won. It's ok.")
 
 
 # display final results
-
+print ("Thanks for playing. Please play again!")
 
 

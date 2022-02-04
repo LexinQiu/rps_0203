@@ -7,7 +7,7 @@
 #
 
 # process user inputs
-print("Rock, Paper, Scissors, Shoot!")
+
 print("Welcome 'Player One' to my Rock-Paper-Scissors game.")
 
 u = input("Please choose one of: 'rock', 'paper', 'scissors': ")
@@ -17,7 +17,7 @@ print("User chose:", u)
 
 # validate user inputs
 
-v=input().lower()
+v = u.lower()
 if v in ['rock','paper','scissors']:
     print("Good choice!")
 else:
@@ -57,4 +57,7 @@ else:
 # display final results
 print ("Thanks for playing. Please play again!")
 
+#player name customization
+import os
 
+player_name = os.getenv("PLAYER_NAME", default="Player One")
